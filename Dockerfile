@@ -24,4 +24,4 @@ COPY cert.pem key.pem /django/
 COPY . .
 
 # Specify the command to run the application
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000", "--cert", "cert.pem", "--key", "key.pem"]
+CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000", "--cert", "cert.pem", "--key", "key.pem"]
