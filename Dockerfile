@@ -6,7 +6,7 @@ ENV PYTHONBUFFERED=1
 
 # Install required system dependencies
 RUN apt-get update && \
-    apt-get install -y python3-pip libgl1-mesa-glx openssl
+    apt-get install -y python3-pip libgl1-mesa-glx openssl libglib2.0-0
 
 # Set the working directory
 WORKDIR /django
