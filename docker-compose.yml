@@ -1,0 +1,12 @@
+version: '3.10'
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile  # Specify the Dockerfile name if it's not named 'Dockerfile'
+    volumes:
+      - .:/django
+    ports:
+      - "8000:8000"
+    container_name: my_first_django_container
+    command: python3 manage.py runserver 0.0.0.0:8000
