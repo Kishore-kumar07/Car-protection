@@ -3,7 +3,7 @@ services:
   django:
     build: 
       context: .
-      dockerfile: Dockerfile  # Specify the Dockerfile name if it's not named 'Dockerfile'
+      dockerfile: Dockerfile.django  # Specify the Dockerfile name if it's not named 'Dockerfile'
     volumes:
       - .:/django
     ports:
